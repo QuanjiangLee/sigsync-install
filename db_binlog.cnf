@@ -1,0 +1,7 @@
+[mysqld]
+  server-id               = 1     
+  log_bin                 = /var/log/mysql/mysql-bin
+  binlog-do-db            = MyDatabase  #需要做同步任务的数据库 
+  expire_logs_days        = 10
+  max_binlog_size         = 10M
+  binlog_format           = mixed

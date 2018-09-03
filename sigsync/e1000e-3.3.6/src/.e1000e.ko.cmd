@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/sigsync/e1000e-3.3.6/src/e1000e.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/ubuntu/sigsync/e1000e-3.3.6/src/e1000e.ko /home/ubuntu/sigsync/e1000e-3.3.6/src/e1000e.o /home/ubuntu/sigsync/e1000e-3.3.6/src/e1000e.mod.o ;  true

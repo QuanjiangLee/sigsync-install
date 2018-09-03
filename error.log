@@ -1,0 +1,2 @@
+mysqladmin: connect to server at 'localhost' failed
+error: 'Access denied for user 'root'@'localhost' (using password: NO)'

@@ -1,0 +1,46 @@
+213  tar zxvf e1000e-3.3.6.tar.gz 
+  214  cd e1000e-3.3.6/
+  215  cd src/
+  216  make install 
+  217  sudo make install
+  218  make install 
+  219  modprobe e100e
+  220  sudo modprobe e1000
+  221  ifconfig
+  222  shutdown -h now
+  223  sysctl -w
+  224  sysctl -w net.core.netdev_max_backlog=20000
+  225  sysctl --help
+  226  sysctl -a
+  227  sysctl -a | grep net.ipv4.udp
+  228  sysctl -w net.ipv4.udp_mem=754848 1006464 1509096
+  229  sysctl -a | grep net.ipv4.udp
+  230  sysctl -w net.ipv4.udp_mem=754848  1006464  1509096
+  231  sysctl -w net.ipv4.udp_mem=754848       1006464    1509096
+  232  sysctl -w net.ipv4.udp_mem="754848  1006464  1509096"
+  233  sysctl -w net.core.mem_max=67108864
+  234  sysctl -a | grep mem_max
+  235  sysctl -w net.core.rmem_max=67108864
+  236  cd sigsync/
+  237  vim sigsync.conf 
+  238  ./sigsync 
+  239  cd
+  240  ls
+  241  dpkg -i /home/saller/Downloads/libmysqlclient18_5.5.35+dfsg-1ubuntu1_amd64.deb 
+  242  cd sigsync/
+  243  ./sigsync 
+  244  ifconfig
+  245  ifconfig -a
+  246  reboot
+  247  apt-get install inotify-tools 
+
+
+apt-get install mariadb-server mariadb-client
+    8  SUDO apt-get install mariadb-server mariadb-client
+    9  sudo apt-get install mariadb-server mariadb-client
+   10  sudo apt-get install inotify-tools gcc git 
+   11  sudo apt-get install libmysqlclient-dev 
+   12  git clone https://QuanjiangLee@bitbucket.org/QuanjiangLee/sigsync.git
+   13  cd sigsync/
+   14  ls
+   15  tar zxvf e1000e-3.3.6.tar.gz
